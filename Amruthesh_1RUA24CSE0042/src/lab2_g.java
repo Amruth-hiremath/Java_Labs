@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class lab2_g {
+	
+	public static void evenorodd(int num) {
+		if(num == 0) {
+			System.out.println("The number is 0");
+		}
+		else if(num > 0) {
+			System.out.println("The number is positive");
+		}
+		else {
+			System.out.println("The number is negative");
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number: ");
+		int num = sc.nextInt();
+		evenorodd(num);
+	}
+}
