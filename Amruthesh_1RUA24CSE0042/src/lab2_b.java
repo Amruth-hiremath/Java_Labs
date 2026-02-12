@@ -14,5 +14,4 @@ public class lab2_b {
 		}
 		sc.close();
 	}
-
 }
