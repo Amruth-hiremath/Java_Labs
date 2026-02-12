@@ -20,6 +20,7 @@ public class lab2_f {
 		double final_salary = 0;
 		final_salary = total + total * 0.05;
 		System.out.println("The final salary is: " + final_salary);
+		sc.close();
 	}
 
 }

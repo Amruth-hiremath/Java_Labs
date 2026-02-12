@@ -19,5 +19,6 @@ public class lab2_g {
 		System.out.println("Enter your number: ");
 		int num = sc.nextInt();
 		evenorodd(num);
+		sc.close();
 	}
 }

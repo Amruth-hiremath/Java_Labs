@@ -12,6 +12,7 @@ public class lab2_b {
 		for(int i = 10; i <= num; i++) {
 			System.out.println(i);
 		}
+		sc.close();
 	}
 
 }
