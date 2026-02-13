@@ -37,7 +37,5 @@ public class lab4_c {
 		MobileBill c2 = new MobileBill(200, 10, 10);
 		c2.CalculateBill();
 		c2.display();
-
 	}
-
 }

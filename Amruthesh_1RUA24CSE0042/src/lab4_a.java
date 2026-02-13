@@ -19,7 +19,5 @@ public class lab4_a {
 		double result = c.circumference(rad);
 		System.out.println("The circumference of the circle is: " + result);
 		sc.close();
-
 	}
-
 }

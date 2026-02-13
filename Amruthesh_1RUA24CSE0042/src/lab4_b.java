@@ -43,7 +43,5 @@ public class lab4_b {
 		c1.display();
 		System.out.println();
 		c2.display();
-
 	}
-
 }
