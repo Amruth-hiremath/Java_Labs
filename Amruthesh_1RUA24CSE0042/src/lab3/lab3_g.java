@@ -1,3 +1,4 @@
+package lab3;
 import java.util.Scanner;
 
 public class lab3_g {
@@ -17,5 +18,6 @@ public class lab3_g {
 		for(int i=n-1;i>=0;i--) {
 			System.out.print(arr[i] + " ");
 		}
+		sc.close();
 	}
 }
