@@ -12,6 +12,7 @@ public class lab3_e {
 			}
 			System.out.print(" \n");
 		}
+		sc.close();
 
 	}
 
