@@ -1,5 +1,5 @@
-
-public class lab1_b {
+package lab3;
+public class lab3_a {
 
 	public static void main(String[] args) {
 		String name = "Amruthesh";

@@ -1,3 +1,4 @@
+package lab4;
 class Customer{
 	String name;
 	int bill_amt;
