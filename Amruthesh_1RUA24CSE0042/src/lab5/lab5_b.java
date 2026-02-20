@@ -14,7 +14,6 @@ class Rectangle extends Shape{
 		this.width = width;
 	}
 	
-	@Override
 	void calculateArea() {
 		double area = length * width;
 		System.out.println("Area of rectangle is: " + area);
@@ -28,7 +27,6 @@ class Circle extends Shape{
 		this.radius = radius;
 	}
 	
-	@Override
 	void calculateArea() {
 		double area = 3.14 * radius * radius;
 		System.out.println("Area of circle is: " + area);
