@@ -69,24 +69,24 @@ public class lab3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 Savings mySavings = new Savings("Amruthesh", 1012345L, 1000.0);
-	     CurrentAccount myCurrent = new CurrentAccount("Arham", 2012345L, 500.0);
+		 Savings Savings = new Savings("Amruthesh", 1012345L, 1000.0);
+	     CurrentAccount Current = new CurrentAccount("Arham", 2012345L, 500.0);
 	     
 	     System.out.println("--- Savings Account Activity ---");
 	     
-	        mySavings.display();
-	        mySavings.deposit(500.0);
-	        mySavings.calculateInterest();
-	        mySavings.withdraw(200.0);
-	        mySavings.display();
+	        Savings.display();
+	        Savings.deposit(500.0);
+	        Savings.calculateInterest();
+	        Savings.withdraw(200.0);
+	        Savings.display();
 
 	        System.out.println("\n-------------------------------\n");
 
 	        System.out.println("--- Current Account Activity ---");
-	        myCurrent.display();
-	        myCurrent.deposit(200.0);
-	        myCurrent.withdraw(1000.0); 
-	        myCurrent.display();
+	        Current.display();
+	        Current.deposit(200.0);
+	        Current.withdraw(1000.0); 
+	        Current.display();
 
 	}
 
