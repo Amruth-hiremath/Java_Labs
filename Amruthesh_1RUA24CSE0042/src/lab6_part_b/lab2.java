@@ -53,7 +53,7 @@ public class lab2 {
 		e1.job_title = "Intern";
 		e1.display(e1.calc());
 		
-		System.out.println("--------------------");
+		System.out.println("---------------------");
 		
 		Employee e2 = new Employee(name, job_title);
 		e2.display(e2.calc(e2.incentive));
