@@ -49,7 +49,6 @@ class Customer{
 	        super(name, accNum, bal);
 	    }
 	    
-	 // 4. Current Account Operations
 	    void deposit(double amount) {
 	        balance += amount;
 	        System.out.println("Deposited: $" + amount);
