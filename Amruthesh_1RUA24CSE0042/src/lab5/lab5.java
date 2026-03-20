@@ -1,4 +1,5 @@
 package lab5;
+
 interface Exam{
 	double calc_percentage();
 }
