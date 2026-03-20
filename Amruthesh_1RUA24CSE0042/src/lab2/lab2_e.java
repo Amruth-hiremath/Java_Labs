@@ -1,19 +1,20 @@
 package lab2;
-
+import java.util.Scanner;
 public class lab2_e {
-	
-	public static int printnums(int num) {
-		int sum = 0;
-		for(int i = 0; i <=num; i++) {
-			sum += i;
-		}
-		return sum;
-	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int sum = printnums(20);
-		System.out.println("The sum of first 20 natural numbers is: " + sum);
+		System.out.println("Enter the number of rows: ");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		for(int i = 0; i <= num; i++) {
+			for(int j = 0; j < i; j++) {
+				System.out.print(i);
+			}
+			System.out.print(" \n");
+		}
+		sc.close();
+
 	}
 
 }

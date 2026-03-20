@@ -1,16 +1,19 @@
 package lab1;
 import java.util.Scanner;
-public class lab1_d {
+public class lab1_g {
 	
 	public static void evenorodd(int num) {
-		if(num % 2 == 0) {
-			System.out.println("The number is even.");
+		if(num == 0) {
+			System.out.println("The number is 0");
+		}
+		else if(num > 0) {
+			System.out.println("The number is positive");
 		}
 		else {
-			System.out.println("The number is odd.");
+			System.out.println("The number is negative");
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -19,5 +22,4 @@ public class lab1_d {
 		evenorodd(num);
 		sc.close();
 	}
-
 }

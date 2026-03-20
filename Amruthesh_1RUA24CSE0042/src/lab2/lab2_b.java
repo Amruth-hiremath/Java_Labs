@@ -5,14 +5,17 @@ public class lab2_b {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your number greater than 10: ");
-		int num = sc.nextInt();
-	
-
-		System.out.println("The numbers from 10 to " + num + ":");
-		for(int i = 10; i <= num; i++) {
-			System.out.println(i);
+		System.out.println("Enter your age: ");
+		int age = sc.nextInt();
+		
+		if(age >= 18) {
+			System.out.println("You are eligible to vote!");
 		}
+		else {
+			System.out.println("You are not eligible to vote!");
+		}
+		
 		sc.close();
 	}
+
 }

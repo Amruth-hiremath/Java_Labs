@@ -1,15 +1,24 @@
 package lab3;
+import java.util.Scanner;
+
+class Circle{
+	int radius;
+	
+	double circumference(int radius) {
+		double circumference = radius * 3.14 * 2;
+		return circumference;
+	}
+}
 public class lab3_a {
 
 	public static void main(String[] args) {
-		String name = "Amruthesh";
-		int age = 18;
-		String branch = "CSE";
-		
-		System.out.println("Name: " + name);
-		System.out.println("Age: " + age);
-		System.out.println("Branch: " + branch);
-
+		// TODO Auto-generated method stub3
+		Circle c = new Circle();
+		System.out.println("Enter the radius: ");
+		Scanner sc = new Scanner(System.in);
+		int rad = sc.nextInt();
+		double result = c.circumference(rad);
+		System.out.println("The circumference of the circle is: " + result);
+		sc.close();
 	}
-
 }

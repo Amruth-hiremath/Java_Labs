@@ -1,30 +1,24 @@
 package lab4;
-class MobileBill{
-	int local;
-	int isd;
-	int net_pack;
-	double bill_amt;
-	
-	MobileBill(){
-		local = 0;
-		isd = 0;
-		net_pack = 0;
-		bill_amt = 0;
+
+abstract class Bank{
+	abstract int getBalance();
+}
+
+class BankA extends Bank{
+	int getBalance(){
+		return 100;
 	}
-	
-	MobileBill(int local, int isd, int net_pack){
-		this.local = local;
-		this.isd = isd;
-		this.net_pack = net_pack;
+}
+
+class BankB extends Bank{
+	int getBalance(){
+		return 150;
 	}
-	
-	void CalculateBill() {
-		double bill = (local * 0.10 + isd * 1 + net_pack * 500);
-		this.bill_amt = bill;
-	}
-	
-	void display() {
-		System.out.println("Total bill amount: " + bill_amt);
+}
+
+class BankC extends Bank{
+	int getBalance(){
+		return 200;
 	}
 }
 
@@ -32,11 +26,13 @@ public class lab4_c {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MobileBill c1 = new MobileBill();
-		c1.CalculateBill();
-		c1.display();
-		MobileBill c2 = new MobileBill(200, 10, 10);
-		c2.CalculateBill();
-		c2.display();
+		Bank bankA = new BankA();
+		Bank bankB = new BankB();
+		Bank bankC = new BankC();
+		
+		System.out.println("Balance in BankA is: " + bankA.getBalance() + "$");
+		System.out.println("Balance in BankB is: " + bankB.getBalance() + "$");
+		System.out.println("Balance in BankC is: " + bankC.getBalance() + "$");
 	}
+
 }

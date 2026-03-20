@@ -1,25 +1,23 @@
 package lab2;
 import java.util.Scanner;
+
 public class lab2_g {
-	
-	public static void evenorodd(int num) {
-		if(num == 0) {
-			System.out.println("The number is 0");
-		}
-		else if(num > 0) {
-			System.out.println("The number is positive");
-		}
-		else {
-			System.out.println("The number is negative");
-		}
-	}
-	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your number: ");
-		int num = sc.nextInt();
-		evenorodd(num);
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter array size: ");
+
+		int n= sc.nextInt();
+		int[] arr = new int[n];
+		System.out.println("Enter the elements: ");
+
+		for(int i=0;i<n;i++) {
+			arr[i] = sc.nextInt();
+		}
+		System.out.println("Reversed array: ");
+		for(int i=n-1;i>=0;i--) {
+			System.out.print(arr[i] + " ");
+		}
 		sc.close();
 	}
 }

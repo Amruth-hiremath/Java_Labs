@@ -1,22 +1,43 @@
 package lab2;
 import java.util.Scanner;
 public class lab2_d {
-	
-	public static void evenorodd(int num) {
-		if(num % 2 == 0) {
-			System.out.println("The number is even.");
-		}
-		else {
-			System.out.println("The number is odd.");
-		}
-	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your number: ");
+		System.out.println("Enter a number between 1 and 7: ");
 		int num = sc.nextInt();
-		evenorodd(num);
+		
+		switch(num) {
+		case 1:
+			System.out.println("The day is Sunday!");
+			break;
+
+		case 2:
+			System.out.println("The day is Monday!");
+			break;
+		
+		case 3:
+			System.out.println("The day is Tuesday!");
+			break;
+		
+		case 4:
+			System.out.println("The day is Wednesday!");
+			break;
+		
+		case 5:
+			System.out.println("The day is Thursday!");
+			break;
+		
+		case 6:
+			System.out.println("The day is Friday!");
+			break;
+		
+		case 7:
+			System.out.println("The day is Saturday!");
+			break;
+		}
+			
 		sc.close();
 	}
 

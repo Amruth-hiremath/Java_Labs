@@ -1,24 +1,54 @@
 package lab4;
-import java.util.Scanner;
+class Student{
+	String name;
+	int rollNumber;
 
-class Circle{
-	int radius;
+	Student(String name, int rollNumber){
+		this.name = name;
+		this.rollNumber = rollNumber;
+	}
 	
-	double circumference(int radius) {
-		double circumference = radius * 3.14 * 2;
-		return circumference;
+	void displayStudentDetails() {
+		System.out.println("Name: " + name);
+		System.out.println("Roll Number: " + rollNumber);
 	}
 }
+
+class Test extends Student{
+	int marks;
+	
+	Test(String name, int rollNumber, int marks){
+		super(name, rollNumber);
+		this.marks = marks;
+	}
+	
+	void displayTestDetails(){
+		displayStudentDetails();
+		System.out.println("Marks: " + marks);
+	}
+}
+
+class Sports extends Test{
+	String sports;
+	
+	Sports(String name, int rollNumber, int marks, String sports){
+		super(name, rollNumber, marks);
+		this.sports = sports;
+	}
+	
+	void displaySportsDetails(){
+		displayTestDetails();
+		System.out.println("Sports: " + sports);
+	}
+}
+
+
 public class lab4_a {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub3
-		Circle c = new Circle();
-		System.out.println("Enter the radius: ");
-		Scanner sc = new Scanner(System.in);
-		int rad = sc.nextInt();
-		double result = c.circumference(rad);
-		System.out.println("The circumference of the circle is: " + result);
-		sc.close();
+		// TODO Auto-generated method stub
+		Sports s = new Sports("Amruthesh", 1, 97, "F1");
+		s.displaySportsDetails();
 	}
+
 }

@@ -1,4 +1,4 @@
-package lab6_part_b;
+package part_b;
 
 import java.util.Scanner;
 

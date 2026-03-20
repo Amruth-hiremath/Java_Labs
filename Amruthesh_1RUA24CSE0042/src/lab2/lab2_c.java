@@ -4,17 +4,14 @@ public class lab2_c {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int sum = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your first number: ");
-		int num1 = sc.nextInt();
-		System.out.println("Enter your second number: ");
-		int num2 = sc.nextInt();
-		System.out.println("Enter your third number: ");
-		int num3 = sc.nextInt();
-		
-		int sum = num1 + num2 + num3;
-		
-		System.out.println("The sum of the three numbers is: " + sum);
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		for(int i = 0; i <= num; i++) {
+			sum += i;
+		}
+		System.out.println("The sum from 0 upto " + num + " is: " + sum);
 		sc.close();
 	}
 
