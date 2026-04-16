@@ -22,23 +22,23 @@ class OddThread extends Thread {
 
 public class lab6_b {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 EvenThread even = new EvenThread();
-	        OddThread odd = new OddThread();
+    public static void main(String[] args) {
+        EvenThread even = new EvenThread();
+        OddThread odd = new OddThread();
 
-	        even.start();
-	        odd.start();
+        try {
+            // Start and wait for Odd numbers first
+            odd.start();
+            odd.join(); 
+            
+            // Start and wait for Even numbers second
+            even.start();
+            even.join();
+            
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted: " + e.getMessage());
+        }
 
-	        try {
-	            even.join();
-	            odd.join();
-	        } catch (InterruptedException e) {
-	            System.out.println(e.getMessage());
-	        }
-
-	        System.out.println("Both threads have finished execution.");
-
-	}
-
+        System.out.println("Both threads have finished execution.");
+    }
 }
